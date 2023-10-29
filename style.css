@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgColor: rgb(255, 252, 241);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.texto2 {
+    font-size: 25px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.texto2 h2 {
+    color: #902a99;
+    text-shadow: 3px 3px 5px rgba(48, 90, 141, 0.5);
+}
+
+.texto2 h4 {
+    font-size: 20px;
+    color: #6b3470;
+    text-shadow: 3px 3px 5px rgba(48, 90, 141, 0.5);
+}
+.Contactos {
+    text-align: center;
+    padding: 20px;
+}
+
+.Contactos h1 {
+    font-size: 30px;
+    color: #450d4a;
+    text-shadow: 3px 3px 5px rgba(48, 90, 141, 0.5);
+}
+
+.Contactos h2 {
+    font-size: 20px;
+    color: #49334a;
+    text-shadow: 3px 3px 5px rgba(48, 90, 141, 0.5);
+}
+
+/* header */
+
+
+.header {
+    background-color: #550976;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 4;
+}
+
+.menu {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+.logo img {
+    width: auto;
+    /* Esto permite que la imagen mantenga su relación de aspecto */
+    height: 40px;
+    /* Ajusta la altura según tus necesidades */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-block {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-block p {
+    font-size: 16px;
+}
+
+.product-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.product-button:hover {
+    background-color: #555;
+}
+
+.social-button {
+    margin-left: 10px;
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+}
+
+.wrapper .button {
+
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #E1306C;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #05a718;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+    background: #ff0000;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+    color: #ff0000;
+}
+
+button {
+    background-color: #3dbe84;
+    /* Color de fondo predeterminado */
+    color: #ffffff;
+    /* Color de texto predeterminado */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #f44336;
+    /* Nuevo color de fondo cuando se presiona */
+}
+
+
+#slider {
+    position: relative;
+    width: 50%;
+    height: 32vw;
+    margin: 50px auto;
+    /*transform-style: preserve-3d; */
+    perspective: 1400px;
+}
+
+input[type="radio"] {
+    position: relative;
+    top: 108%;
+    left: 40%;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    transform: translateX(-90px);
+    cursor: pointer;
+    background-color: #261a92;
+    /* Fondo blanco */
+    border: 1px solid #861414;
+    /* Borde gris */
+    border-radius: 50%;
+    /* Botón redondo */
+}
+
+/* Estiliza el botón seleccionado */
+
+input[type="radio"]:checked {
+    background-color: #094319;
+    /* Color de fondo cuando seleccionado */
+    border: 1px solid #8fbb0a;
+    /* Borde cuando seleccionado */
+}
+
+input[type=radio]:nth-child(9) {
+    margin-right: 0px;
+}
+
+input[type=radio]:checked {
+    opacity: 1;
+}
+
+#slider label,
+#slider label img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 500ms ease,
+        background-color 500ms ease,
+        opacity 500ms ease;
+
+}
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5,
+#s6:checked~#slide6,
+#s7:checked~#slide7,
+#s8:checked~#slide8,
+#s9:checked~#slide9 {
+    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+    z-index: 2;
+    opacity: 1;
+}
+
+/* Next Slide */
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide6,
+#s6:checked~#slide7,
+#s7:checked~#slide8,
+#s8:checked~#slide9,
+#s9:checked~#slide1 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(33.33%, 0, -100px);
+    z-index: 1;
+    opacity: 0.9
+}
+
+/* Next to Next Slide */
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide6,
+#s5:checked~#slide7,
+#s6:checked~#slide8,
+#s7:checked~#slide9,
+#s8:checked~#slide1,
+#s9:checked~#slide2 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(66.67%, 0, -250px);
+    z-index: 1;
+    opacity: 0.6
+}
+
+/* Previous Slide */
+#s1:checked~#slide9,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4,
+#s6:checked~#slide5,
+#s7:checked~#slide6,
+#s8:checked~#slide7,
+#s9:checked~#slide8 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(-33.33%, 0, -100px);
+    z-index: 1;
+    opacity: 0.9
+}
+
+/* Previous to Previous Slide */
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide6,
+#s4:checked~#slide7,
+#s5:checked~#slide8,
+#s6:checked~#slide9,
+#s7:checked~#slide1,
+#s8:checked~#slide2,
+#s9:checked~#slide3 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(-66.67%, 0, -250px);
+    z-index: 1;
+    opacity: 0.6
+}
+
+footer {
+    background-color: #550976;
+
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.portada1 {
+    text-align: center;
+    padding: 20px;
+    color: #033554;
+    text-shadow: 3px 3px 5px rgba(48, 90, 141, 0.5);
+}
+
+.portada1 h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.portada1 h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.portada1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .portada1 h2 {
+        font-size: 20px;
+        /* Reducir el tamaño del título en dispositivos móviles */
+    }
+
+    .portada1 h4 {
+        font-size: 16px;
+        /* Reducir el tamaño del subtítulo en dispositivos móviles */
+        text-align: center;
+        /* Centrar el texto en dispositivos móviles */
+        margin: 5px;
+        /* Reducir el margen en dispositivos móviles */
+    }
+}
+
+
+.img-servicios {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-servicios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(-5deg);
+    z-index: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-servicios .card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .content-servicios {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+
+/*productos */
+ul {
+    padding: 0;
+    width: 100%;
+    /* Ancho completo del contenedor padre */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Columnas adaptables */
+    grid-gap: 20px;
+    /* Espacio entre las columnas y filas */
+    list-style: none;
+}
+
+ul li .imageBox {
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+ul li .imageBox figure {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li .imageBox figure:before,
+ul li .imageBox figure:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #550976;
+    transition: .5s;
+}
+
+ul li .imageBox figure:before {
+    left: -50%;
+}
+
+ul li .imageBox:hover figure:before {
+    left: 0%;
+}
+
+ul li .imageBox figure:after {
+    right: -50%;
+}
+
+ul li .imageBox:hover figure:after {
+    right: 0%;
+}
+
+ul li .imageBox figure img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+ul li .imageBox figure figcaption {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: .5s;
+    transition-delay: .5s;
+    transform: translateY(20px);
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li .imageBox:hover figure figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ul li .imageBox figure figcaption h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ul li .imageBox figure figcaption p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+ul li .imageBox figure figcaption a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #550976;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+ul li .imageBox figure img {
+    width: 100%;
+    height: 100%;
+    /* Ajusta la altura al 100% para que la imagen ocupe todo el contenedor */
+    background: url("eq1.png") no-repeat center center;
+    /* Usa la imagen de fondo en lugar de la etiqueta img */
+    background-size: cover;
+    /* Escala la imagen de fondo para cubrir el contenedor */
+}

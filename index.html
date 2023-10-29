@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluye la referencia a Animate.css desde una URL pública -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database-compat.js"></script>
+    <title>Tienda de Productos</title>
+
+    <link rel="preload" as="image" href="img1.png">
+    <link rel="preload" as="image" href="img2.png">
+    <link rel="preload" as="image" href="img3.png">
+    <link rel="preload" as="image" href="img4.png">
+    <link rel="preload" as="image" href="img5.png">
+    <link rel="preload" as="image" href="img6.png">
+    <link rel="preload" as="image" href="img7.png">
+    <link rel="preload" as="image" href="img8.png">
+    <link rel="preload" as="image" href="img9.png">
+</head>
+
+<body>
+    <div class="header">
+        <a class="logo" href="#"><img src="logo.png" alt="Logo" width="100" height="100"></a>
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#tienda">Tienda</a>
+            <a href="#quienes-somos">Quiénes somos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </div>
+    <div class="texto2">
+        <h2>
+            Qué es la BioResonancia?
+        </h2>
+        <h4>
+            La Biorresonancia magnética es una técnica que usa ondas electromagnéticas
+            , estas envían y reciben con equipos biorresonadores dedicados
+            al análisis del estado de salud del cuerpo. Los equipos son biorresonadores
+            que evaluan, detectan, preparan medicación y sanan las patologías de tejidos
+            y órganos.
+        </h4>
+    </div>
+    <div class="spacer">
+
+    </div>
+
+    <div id="slider">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+        <input type="radio" name="slider" id="s6">
+        <input type="radio" name="slider" id="s7">
+        <input type="radio" name="slider" id="s8">
+        <input type="radio" name="slider" id="s9">
+
+        <label for="s1" id="slide1"><img src="img1.png" alt="" loading="lazy"></label>
+        <label for="s2" id="slide2"><img src="img2.png" alt="" loading="lazy"></label>
+        <label for="s3" id="slide3"><img src="img3.png" alt="" loading="lazy"></label>
+        <label for="s4" id="slide4"><img src="img4.png" alt="" loading="lazy"></label>
+        <label for="s5" id="slide5"><img src="img5.png" alt="" loading="lazy"></label>
+        <label for="s6" id="slide6"><img src="img6.png" alt="" loading="lazy"></label>
+        <label for="s7" id="slide7"><img src="img7.png" alt="" loading="lazy"></label>
+        <label for="s8" id="slide8"><img src="img8.png" alt="" loading="lazy"></label>
+        <label for="s9" id="slide9"><img src="img9.png" alt="" loading="lazy"></label>
+    </div>
+    <div class="portada1">
+        <h2>
+            Bienvenido a BioResonancias
+        </h2>
+        <h4>
+            Contamos con los más avanzados equipos de diagnóstico para medicina
+            alternativa que impulsarán tus capacidades de diagnósticos y tratamiento!
+        </h4>
+        <img src="excelencia.png" alt="excelencia">
+    </div>
+    <div class="img-servicios">
+        <div class="content-servicios">
+            <div class="card"><img src="equipo1.png"></div>
+            <div class="card"><img src="equipo2.png"></div>
+            <div class="card"><img src="equipo4.png"></div>
+        </div>
+    </div>
+    <div class="texto1">
+        <h2>
+            Te ofrecemos:
+        </h2>
+        <br>
+        <h4>
+            Los equipos más avanzados a precios de distribuidor internacional
+        </h4>
+        <br>
+    </div>
+    <ul class="product-list">
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq1.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq2.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq3.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq4.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq5.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq6.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq7.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq8.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="imageBox">
+                <figure>
+                    <img src="eq9.png" alt="">
+                    <figcaption>
+                        <h2>
+                            Nombre maquina
+                        </h2>
+                        <p>
+                            descripción máquina
+                        </p>
+                        <a href="#"> Ver Más</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+    </ul>
+
+    <div class="Contactos">
+        <h1>
+            Contacto
+        </h1>
+        <h2>
+            <br>
+            Estamos para servirte.
+            <br>
+            Pregunta por Jimmy Gallardo
+            <br>
+            <br>
+            E-mail: bluetouchjimmy@gmail.com
+            <br>
+            Celular: 001 626 4740092
+
+        </h2>
+        <div class="mapa">
+            <h2>
+                <br>
+                Dirección:13046 Valley Blvd, La Puente, CA 91746, USA
+                <br>
+                California <br>
+                Oficina 205 <br>
+                626 4212669 <br>
+                626 4740092<br>
+                562 7585308<br>
+            </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3305.749278037164!2d-118.0017767!3d34.050302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d7240f175e8b%3A0x55aaaf8ed2218833!2s13046%20Valley%20Blvd%2C%20La%20Puente%2C%20CA%2091746%2C%20USA!5e0!3m2!1sen!2sec!4v1697247282310!5m2!1sen!2sec"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        <h3>
+            <br>
+            Contactanos en nuestras redes
+        </h3>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <span>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <span><a href="https://www.instagram.com/" target="_blank">Instagram</a></span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <a href="https://www.tiktok.com/" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                <span><a href="https://www.tiktok.com/" target="_blank">TikTok</a></span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <a href="https://wa.link/9m1ngk" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <span><a href="https://wa.link/9m1ngk" target="_blank">Whatsapp</a></span>
+            </div>
+        </div>
+        <br>
+    </footer>
+</body>
+
+</html>
